@@ -10,7 +10,7 @@
 
 if ( ! defined( 'ULTIMATE_NEWS_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'ULTIMATE_NEWS_VERSION', '1.0.0' );
+	define( 'ULTIMATE_NEWS_VERSION', '1.0.2' );
 }
 
 if ( ! function_exists( 'ultimate_news_setup' ) ) :
@@ -222,7 +222,7 @@ function ultimate_news_scripts() {
 	wp_enqueue_style( 'slick-style', get_template_directory_uri() . '/assets/css/slick' . $min . '.css', array(), '1.8.0' );
 
 	// Fontawesome style.
-	wp_enqueue_style( 'fontawesome-style', get_template_directory_uri() . '/assets/css/fontawesome' . $min . '.css', array(), '6.4.2' );
+	wp_enqueue_style( 'fontawesome-style', get_template_directory_uri() . '/assets/css/all' . $min . '.css', array(), '6.7.2' );
 
 	// Google fonts.
 	wp_enqueue_style( 'ultimate-news-google-fonts', wptt_get_webfont_url( ultimate_news_get_fonts_url() ), array(), null );
